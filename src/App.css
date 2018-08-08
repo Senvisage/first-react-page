@@ -5,11 +5,17 @@
   color: white;
 }
 
-.App-intro {
-  font-size: large;
-}
-
-h1 {
+.App h1 {
   font-family: 'Teko', sans-serif;
   font-size: 2em;
+}
+
+.App main {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.App main ul {
+  flex-basis: 0;
+  flex-grow: 1;
 }

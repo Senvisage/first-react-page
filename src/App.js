@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import CharacterListItem from './components/CharacterListItem'
+import CharacterDetails from './components/CharacterDetails'
 
 class App extends Component {
   state = {
@@ -45,10 +46,7 @@ class App extends Component {
   });
 
   handleCharacterListItemClick = name => {
-    console.log("Searching for adequate adventurers (name="+name+")...");
-    //console.log(this.searchCharactersByName(name)[0]);  //OK
     this.setState({ activeCharacter: this.searchCharactersByName(name)[0] });
-    console.log(this.state);
   }
 
   render() {
@@ -69,9 +67,7 @@ class App extends Component {
                 onClick={this.handleCharacterListItemClick} />
             ))}
           </ul>
-          <p>
-            {activeCharacter.name || "Choisis un Héros !"}
-          </p>
+          <CharacterDetails character={activeCharacter} />
         </main>
       </div>
     );
