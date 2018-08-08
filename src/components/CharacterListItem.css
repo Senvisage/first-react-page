@@ -3,6 +3,7 @@
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  cursor: context-menu;
 }
 .CharacterListItem:nth-of-type(2n) {
   background-color: #DDD;

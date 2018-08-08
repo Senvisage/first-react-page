@@ -28,20 +28,31 @@ class App extends Component {
       {
         name: 'Ashe',
         level: 16,
-        isDead: true
       },
       {
         name: "Beau'ne",
         level: 58,
-        isDead: false
+        isDead: true
       },
     ],
     activeCharacter: {}
   }
 
-  render() {
-    const {characters} = this.state;
+  searchCharactersByName = name => this.state.characters.filter((char) => {
+    if(char.name.toLowerCase().indexOf(name.toLowerCase())!==-1)
+      return char;
+    return undefined;
+  });
 
+  handleCharacterListItemClick = name => {
+    console.log("Searching for adequate adventurers (name="+name+")...");
+    //console.log(this.searchCharactersByName(name)[0]);  //OK
+    this.setState({ activeCharacter: this.searchCharactersByName(name)[0] });
+    console.log(this.state);
+  }
+
+  render() {
+    const {characters, activeCharacter} = this.state;
     return (
       <div className="App">
         <header>
@@ -50,9 +61,17 @@ class App extends Component {
         <main>
           <ul>
             {characters.map((character, index) => (
-              <CharacterListItem name={character.name} level={character.level} isDead={character.isDead | "false"} index={index} />
+              <CharacterListItem
+                key={index}
+                name={character.name}
+                level={character.level}
+                isDead={character.isDead | "false"}
+                onClick={this.handleCharacterListItemClick} />
             ))}
           </ul>
+          <p>
+            {activeCharacter.name || "Choisis un Héros !"}
+          </p>
         </main>
       </div>
     );
