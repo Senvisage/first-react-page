@@ -41,11 +41,7 @@ const DEFAULT_STATE = {
       story: "Beau'ne lights up the lizardfolk world as Miss Universe. She is also a leading swordswoman in competitive battles at the arena, towering at the forefront of one of the few spectator sports remaining. Graced with both deadly strength and beauty, Beau'ne has been dubbed a true femme fatale. A glimpse of her seductively supple tail sends men into a frenzy. The arena's sales consequently skyrocket whenever she makes an appearance. One day, an arena janitor found one of Beau'ne's scales lying in the dust, presumably the casualty of a heated skirmish. It reflected light beautifully, glittering with all the colors of the rainbow. The janitor put it up for auction, half considering it a joke. It sold for enough money to build a new house."
     },
   },
-  activeCharacter: {
-    name: "Anonymous",
-    level: "n/a",
-    isDead: true,
-  }
+  activeCharacter: undefined
 }
 
 class App extends Component {
