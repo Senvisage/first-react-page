@@ -6,3 +6,11 @@ body {
   margin: 0;
   padding: 0;
 }
+
+@font-face {
+   font-family: typeWriter;
+   src: url("fonts/1942.ttf");
+}
+strong {
+  font-weight: bold;
+}
