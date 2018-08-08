@@ -21,13 +21,13 @@
   transition: 0.2s all;
   margin: auto;
 }
-.CharacterListItem .container:hover img{
+.CharacterListItem:hover .container img{
   transform:scale(1.1);
 }
 .CharacterListItem .container img.dead {
   filter: grayscale(100%);
 }
-.CharacterListItem .container:hover img.dead {
+.CharacterListItem:hover .container img.dead {
   filter: none;
 }
 

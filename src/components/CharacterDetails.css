@@ -1,0 +1,49 @@
+.CharacterDetails {
+  background-color: #DDD;
+  width: 80%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.CharacterDetails figure {
+  background-color: #FFF;
+  padding: 20px;
+  box-shadow: 3px 3px 3px 3px rgba(0,0,0,0);
+  width: 40%;
+  transform: rotate(-2deg);
+}
+
+.CharacterDetails figure img{
+  background-color: #000;
+  max-width: 100%;
+  height: auto;
+}
+
+.CharacterDetails figure figcaption {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2em;
+}
+
+.CharacterDetails .youAreDead {
+  position: absolute;
+  background-color: transparent;
+  bottom: 200px;
+  right: 25px;
+  width: 50%;
+  transform: rotate(20deg);
+}
+
+.CharacterDetails .characterInfo {
+  width: 60%;
+}
+
+.CharacterDetails .characterInfo ul {
+  font-family: 'typeWriter', cursive;
+  font-size: 1.5em;
+  padding: 20px;
+}
+.CharacterDetails .characterInfo .story {
+  text-align: justify;
+  padding: 20px;
+}

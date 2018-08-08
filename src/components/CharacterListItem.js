@@ -8,7 +8,7 @@ const CharacterListItem = ({ name, level, onClick, isDead=false }) => (
       <img src={`img/${name}_icon.png`} alt={`${name}`} className={isDead?"dead":""}/>
     </div>
     <p>
-      {name} ({level}) - {isDead ? "Dead" : "Alive"}
+      {name}
     </p>
   </li>
 )
