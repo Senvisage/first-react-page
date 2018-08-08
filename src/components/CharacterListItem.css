@@ -15,20 +15,31 @@
   overflow: hidden;
   border-radius: 50%;
 }
-.CharacterListItem .container img {
+.CharacterListItem .container .icon {
   max-width: 100%;
   max-height: 100%;
   transition: 0.2s all;
   margin: auto;
 }
-.CharacterListItem:hover .container img{
+.CharacterListItem:hover .container .icon{
   transform:scale(1.1);
 }
-.CharacterListItem .container img.dead {
+.CharacterListItem .container .icon.dead {
   filter: grayscale(100%);
 }
-.CharacterListItem:hover .container img.dead {
+.CharacterListItem:hover .container .icon.dead {
   filter: none;
+  transition: 0.2s all;
+}
+.CharacterListItem .container .youAreDead {
+  transform: rotate(-45deg);
+  width: 100%;
+  position: relative;
+  bottom:43px;  /*Arbitrary value, to get the whole picture in the icon*/
+  transition: 0.2s all;
+}
+.CharacterListItem:hover .container .youAreDead {
+  opacity: 0;
 }
 
 .CharacterListItem p {
