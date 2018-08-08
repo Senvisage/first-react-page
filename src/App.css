@@ -16,6 +16,5 @@
 }
 
 .App main ul {
-  flex-basis: 0;
-  flex-grow: 0.35;
+  width: 20%;
 }

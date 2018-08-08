@@ -11,14 +11,7 @@ class App extends Component {
         name: '54B2',
         level: 90,
         isDead: false,
-        story: `
-          54B2 is the king of the Oxsecians. He has watched over the lives of his people for many years.
-          The technology devised by the Oxsecians spawned possibilities as innumerable as the stars. It was all but inevitable that they would go on to create life with their own hands.
-          This proved to be a double-edged sword, however. The miracles they produced turned monstrous.
-          Their world's lush natural beauty vanished, the landscape transforming into a desolate wasteland littered with corpses.
-          A horrific cataclysm ushered in even darker days. It also brought appalling self-interest to light, and those mortal failings raged out of control.
-          The king lost a lifelong friend. He then had to give up his daughter.
-          He shed bitter tears over loss after loss. And grief coiled about his heart like a serpent and squeezed, until the last of its warmth was gone.`
+        story: "54B2 is the king of the Oxsecians. He has watched over the lives of his people for many years. The technology devised by the Oxsecians spawned possibilities as innumerable as the stars. It was all but inevitable that they would go on to create life with their own hands. This proved to be a double-edged sword, however. The miracles they produced turned monstrous. Their world's lush natural beauty vanished, the landscape transforming into a desolate wasteland littered with corpses. A horrific cataclysm ushered in even darker days. It also brought appalling self-interest to light, and those mortal failings raged out of control. The king lost a lifelong friend. He then had to give up his daughter. He shed bitter tears over loss after loss. And grief coiled about his heart like a serpent and squeezed, until the last of its warmth was gone."
       },
       {
         name: 'Andelucia',
