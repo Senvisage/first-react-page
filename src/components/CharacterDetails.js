@@ -29,7 +29,7 @@ class CharacterDetails extends Component {
               <li><strong>Level:</strong>&nbsp;&nbsp;{character.level}</li>
               <li><strong>Status:</strong>&nbsp;{character.isDead ? "Dead" : "Wanted"}
                 {!character.isDead && (
-                  <button onClick={this.handleKillButtonClick}>I KILLED IT !</button>
+                  <button className="killSwitch" onClick={this.handleKillButtonClick}>I KILLED IT !</button>
                 )}
               </li>
             </ul>
