@@ -47,3 +47,11 @@
   text-align: justify;
   padding: 20px;
 }
+
+.CharacterDetails .characterInfo .killSwitch {
+  background-color: #A00;
+  color: white;
+  font-weight: bold;
+  font-size: 0.6em;
+  width: 100px;
+}

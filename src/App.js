@@ -89,9 +89,15 @@ class App extends Component {
             )
             })}
           </ul>
-          <CharacterDetails
-            character={activeCharacter}
-            killSwitch={this.handleCharacterDetailsKillCharacter}/>
+          {activeCharacter !== undefined ? (
+            <CharacterDetails
+              character={activeCharacter}
+              killSwitch={this.handleCharacterDetailsKillCharacter}/>
+          ) : (
+            <div className="defaultDetails">
+              Choisis un Héros !
+            </div>
+          )}
         </main>
       </div>
     );
